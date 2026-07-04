@@ -1,15 +1,15 @@
 :root {
-  --blue-deep: #0B4F6C;
-  --blue-dark: #062B3F;
-  --turquoise: #01BAEF;
-  --coral: #FF6B6B;
-  --yellow: #FFD23F;
-  --pink: #FF3CAC;
-  --light: #F7FBFC;
+  --blue-deep: #002980; /* Main Flyer Navy */
+  --blue-dark: #001A52; /* Darker shade for depth */
+  --turquoise: #D1E6FA; /* Light blue from the Friday weather card */
+  --coral: #0044CC; /* Vibrant blue for primary buttons */
+  --yellow: #FFC107; /* From the sun icon */
+  --pink: #002980; /* Overwritten to remove pink gradients */
+  --light: #F4F7FB; /* Very light blue-grey for site background */
   --white: #FFFFFF;
-  --text: #16333F;
-  --radius: 18px;
-  --shadow: 0 10px 30px rgba(6, 43, 63, 0.12);
+  --text: #001A52; /* Dark navy text instead of dark grey */
+  --radius: 12px; /* Slightly sharper corners to match the flyer's rectangular feel */
+  --shadow: 0 10px 30px rgba(0, 41, 128, 0.12);
   --font-head: 'Poppins', sans-serif;
   --font-body: 'Nunito', sans-serif;
 }
@@ -56,9 +56,10 @@ img { max-width: 100%; display: block; }
 }
 .btn:hover { transform: translateY(-2px) scale(1.02); }
 .btn-primary {
-  background: linear-gradient(135deg, var(--coral), var(--pink));
+  /* Replaced the coral/pink gradient with a solid brand blue */
+  background: var(--blue-deep);
   color: var(--white);
-  box-shadow: 0 8px 20px rgba(255, 107, 107, .35);
+  box-shadow: 0 8px 20px rgba(0, 41, 128, .25);
 }
 .btn-outline {
   background: transparent;
@@ -232,11 +233,12 @@ img { max-width: 100%; display: block; }
 
 .event-day {
   font-family: var(--font-head);
-  font-weight: 800;
-  color: var(--turquoise);
-  font-size: .8rem;
-  letter-spacing: .06em;
+  font-weight: 900;
+  color: var(--blue-deep);
+  font-size: .85rem;
+  letter-spacing: .08em;
   margin: 10px 0 6px;
+  text-transform: uppercase; 
 }
 .event-card h3 { font-size: 1.2rem; }
 .event-venue { font-weight: 700; font-size: .9rem; color: var(--blue-deep); }
@@ -290,8 +292,8 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
 }
 .pill-hot {
-  background: linear-gradient(135deg, var(--coral), var(--pink));
-  color: var(--white);
+  background: var(--yellow);
+  color: var(--blue-dark);
 }
 
 /* ---------- ACTIVITY GRID ---------- */
