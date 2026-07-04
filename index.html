@@ -68,7 +68,7 @@
     <nav class="main-nav" id="mainNav">
       <a href="#weekend">Weekend</a>
       <a href="#settimana">Settimana</a>
-      <a href="#da-fare">Da Fare</a>
+      <a href="guida.html">Locali & Spiagge</a>
       <a href="#instagram">Instagram</a>
       <a href="#locali" class="nav-cta">Sei un Locale? 🎤</a>
     </nav>
@@ -97,6 +97,12 @@
       <p>Le serate selezionate per venerdì, sabato e domenica. Aggiornato ogni giovedì.</p>
     </div>
 
+    <div class="day-tabs">
+      <button class="tab-btn active" data-target="venerdi">Venerdì</button>
+      <button class="tab-btn" data-target="sabato">Sabato</button>
+      <button class="tab-btn" data-target="domenica">Domenica</button>
+    </div>
+
     <!--
       TEMPLATE EVENTO — copia questo blocco <article> per aggiungere un nuovo evento del weekend.
       Cambia solo il testo tra i tag, non toccare le classi.
@@ -104,21 +110,21 @@
     -->
     <div class="event-grid">
   
-  <article class="event-card">
+  <article class="event-card" data-day="venerdi" data-title="Tentazione Back to the 80's" data-venue="📍 Luma" data-time="22:30" data-tags="#anni80,#djset" data-desc="Serata a tema anni 80 con DJ set.">
     <p class="event-day">VENERDÌ 03 LUGLIO · 22:30</p>
     <h3>Tentazione Back to the 80's</h3>
     <p class="event-venue">📍 Luma</p>
     <div class="event-tags"><span>#anni80</span><span>#djset</span></div>
   </article>
 
-  <article class="event-card">
+  <article class="event-card" data-day="venerdi" data-title="La Gozadera" data-venue="📍 Noa Club" data-time="22:30" data-tags="#reggaeton,#club" data-desc="Il party reggaeton per eccellenza a Soverato.">
     <p class="event-day">VENERDÌ 03 LUGLIO · 22:30</p>
     <h3>La Gozadera</h3>
     <p class="event-venue">📍 Noa Club</p>
     <div class="event-tags"><span>#reggaeton</span><span>#club</span></div>
   </article>
 
-  <article class="event-card">
+  <article class="event-card" data-day="venerdi" data-title="wildworldparty - Night Skinny" data-venue="📍 Pacifico Club" data-time="23:30" data-tags="#nightskinny,#guest" data-desc="Ospite speciale Night Skinny per una serata indimenticabile.">
     <span class="badge badge-hot">🔥 Consigliato</span>
     <p class="event-day">VENERDÌ 03 LUGLIO · 23:30</p>
     <h3>wildworldparty - Night Skinny</h3>
@@ -126,28 +132,28 @@
     <div class="event-tags"><span>#nightskinny</span><span>#guest</span></div>
   </article>
 
-  <article class="event-card">
+  <article class="event-card" data-day="sabato" data-title="After sea" data-venue="📍 Cala Nisa" data-time="19:00" data-tags="#aperitivo,#beach" data-desc="Aperitivo al tramonto in spiaggia per rilassarsi dopo il mare.">
     <p class="event-day">SABATO 04 LUGLIO · 19:00</p>
     <h3>After sea</h3>
     <p class="event-venue">📍 Cala Nisa</p>
     <div class="event-tags"><span>#aperitivo</span><span>#beach</span></div>
   </article>
 
-  <article class="event-card">
+  <article class="event-card" data-day="sabato" data-title="AURA" data-venue="📍 Luma" data-time="22:30" data-tags="#saturdaynight" data-desc="Il sabato notte classico al Luma.">
     <p class="event-day">SABATO 04 LUGLIO · 22:30</p>
     <h3>AURA</h3>
     <p class="event-venue">📍 Luma</p>
     <div class="event-tags"><span>#saturdaynight</span></div>
   </article>
 
-  <article class="event-card">
+  <article class="event-card" data-day="sabato" data-title="Memories 90's–2000" data-venue="📍 Circle Club (Miramare)" data-time="23:30" data-tags="#anni90,#party" data-desc="Un tuffo nel passato con le migliori hit degli anni 90 e 2000.">
     <p class="event-day">SABATO 04 LUGLIO · 23:30</p>
     <h3>Memories 90's–2000</h3>
     <p class="event-venue">📍 Circle Club (Miramare)</p>
     <div class="event-tags"><span>#anni90</span><span>#party</span></div>
   </article>
 
-  <article class="event-card">
+  <article class="event-card" data-day="sabato" data-title="Chiusura Altrove Festival" data-venue="📍 Terrazza della Poesia &quot;Giusy Verbaro&quot;" data-time="SERA" data-tags="#festival,#djset" data-desc="DJ set di DJ Orosaiwa e Pazz Music Bureau (Sharon Samà + Matteo Caglioti). Serata stile party/festival.">
     <span class="badge badge-new">🆕 Evento Speciale</span>
     <p class="event-day">SABATO 04 LUGLIO · SERA</p>
     <h3>Chiusura Altrove Festival</h3>
@@ -156,28 +162,28 @@
     <div class="event-tags"><span>#festival</span><span>#djset</span></div>
   </article>
 
-  <article class="event-card">
+  <article class="event-card" data-day="sabato" data-title="Coachella" data-venue="📍 Mama's Beach Club" data-time="00:00" data-tags="#coachella,#beachclub" data-desc="Party a tema Coachella per ballare fino all'alba.">
     <p class="event-day">SABATO 04 LUGLIO · 00:00</p>
     <h3>Coachella</h3>
     <p class="event-venue">📍 Mama's Beach Club</p>
     <div class="event-tags"><span>#coachella</span><span>#beachclub</span></div>
   </article>
 
-  <article class="event-card">
+  <article class="event-card" data-day="sabato" data-title="Circo nero" data-venue="📍 Noa Club" data-time="00:00" data-tags="#circonero,#spettacolo" data-desc="Uno spettacolo unico e coinvolgente al Noa Club.">
     <p class="event-day">SABATO 04 LUGLIO · 00:00</p>
     <h3>Circo nero</h3>
     <p class="event-venue">📍 Noa Club</p>
     <div class="event-tags"><span>#circonero</span><span>#spettacolo</span></div>
   </article>
 
-  <article class="event-card">
+  <article class="event-card" data-day="domenica" data-title="Sunday Sunset" data-venue="📍 Spox" data-time="16:00" data-tags="#sunset,#aperitivo" data-desc="Aperitivo lungo della domenica pomeriggio.">
     <p class="event-day">DOMENICA 05 LUGLIO · 16:00</p>
     <h3>Sunday Sunset</h3>
     <p class="event-venue">📍 Spox</p>
     <div class="event-tags"><span>#sunset</span><span>#aperitivo</span></div>
   </article>
 
-  <article class="event-card">
+  <article class="event-card" data-day="domenica" data-title="Sunset Experience - COCO" data-venue="📍 Pacifico Club" data-time="18:00" data-tags="#sunset,#experience" data-desc="Un'esperienza al tramonto indimenticabile al Pacifico Club.">
     <span class="badge badge-hot">🔥 Consigliato</span>
     <p class="event-day">DOMENICA 05 LUGLIO · 18:00</p>
     <h3>Sunset Experience - COCO</h3>
@@ -185,7 +191,7 @@
     <div class="event-tags"><span>#sunset</span><span>#experience</span></div>
   </article>
 
-  <article class="event-card">
+  <article class="event-card" data-day="domenica" data-title="Tropica - Cesare Aiello" data-venue="📍 Cala Nisa" data-time="18:00" data-tags="#tropica,#beach" data-desc="Party Tropica in spiaggia.">
     <p class="event-day">DOMENICA 05 LUGLIO · 18:00</p>
     <h3>Tropica - Cesare Aiello</h3>
     <p class="event-venue">📍 Cala Nisa</p>
@@ -261,14 +267,12 @@
 <section class="section" id="da-fare">
   <div class="container">
     <div class="section-head">
-      <h2>☀️ Non Solo Serate: Cosa Fare a Soverato</h2>
-      <p>Stiamo mappando le migliori spiagge, i lidi e le attività turistiche per farti vivere Soverato a 360 gradi.</p>
+      <h2>☀️ Non Solo Serate: Locali e Spiagge</h2>
+      <p>Stiamo mappando le migliori spiagge, lidi, ristoranti e bar per farti vivere Soverato a 360 gradi.</p>
     </div>
-
-    <div class="coming-soon-banner" style="background: rgba(0, 41, 128, 0.05); border: 2px dashed #002980; border-radius: 12px; padding: 60px 20px; text-align: center; max-width: 800px; margin: 0 auto;">
-      <div style="font-size: 3rem; margin-bottom: 16px;">🚧</div>
-      <h3 style="color: #002980; font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.5rem;">Sezione in Arrivo!</h3>
-      <p style="color: #001A52; font-weight: 600; opacity: 0.8;">La guida definitiva alle attività diurne di Soverato sarà disponibile a breve.</p>
+    
+    <div style="text-align: center; margin-top: 32px;">
+      <a href="guida.html" class="btn btn-primary">Vai alla Guida dei Locali e Spiagge 🏖️</a>
     </div>
   </div>
 </section>
@@ -330,7 +334,7 @@
     <div class="footer-links">
       <a href="#weekend">Weekend</a>
       <a href="#settimana">Settimana</a>
-      <a href="#da-fare">Da Fare</a>
+      <a href="guida.html">Locali & Spiagge</a>
       <a href="#instagram">Instagram</a>
       <a href="#locali">Sei un Locale?</a>
     </div>
@@ -341,6 +345,20 @@
     <p class="footer-copy">© <span id="year"></span> Cosa Fare a Soverato. Fatto con 🧡 per la Perla dello Ionio.</p>
   </div>
 </footer>
+
+<!-- ============ EVENT MODAL ============ -->
+<div class="event-modal-overlay" id="eventModalOverlay">
+  <div class="event-modal" id="eventModal">
+    <button class="modal-close" id="modalClose" aria-label="Chiudi Modale">&times;</button>
+    <div class="modal-content">
+      <p class="modal-day" id="modalDay"></p>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-venue" id="modalVenue"></p>
+      <div class="modal-tags" id="modalTags"></div>
+      <p class="modal-desc" id="modalDesc"></p>
+    </div>
+  </div>
+</div>
 
 <script src="js/main.js"></script>
 </body>
