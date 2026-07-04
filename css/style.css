@@ -528,11 +528,38 @@ img { max-width: 100%; display: block; }
   color: var(--blue-deep);
   margin-bottom: 12px;
 }
-.modal-venue {
+a.modal-venue {
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--blue-dark);
   margin-bottom: 16px;
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 26, 82, 0.3);
+  text-underline-offset: 4px;
+}
+a.modal-venue:hover {
+  text-decoration-color: var(--blue-dark);
+}
+.modal-socials {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.social-btn {
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--light);
+  color: var(--text);
+  font-weight: 700;
+  border: 1px solid rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+.social-btn:hover {
+  background: var(--white);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 .modal-tags {
   display: flex;

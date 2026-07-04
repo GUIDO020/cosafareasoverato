@@ -75,6 +75,7 @@ const modalClose = document.getElementById('modalClose');
 const modalDay = document.getElementById('modalDay');
 const modalTitle = document.getElementById('modalTitle');
 const modalVenue = document.getElementById('modalVenue');
+const modalVenueLink = document.getElementById('modalVenueLink');
 const modalTags = document.getElementById('modalTags');
 const modalDesc = document.getElementById('modalDesc');
 
@@ -90,7 +91,11 @@ if (modalOverlay && modalClose) {
 
       modalDay.textContent = day;
       modalTitle.textContent = title;
-      modalVenue.textContent = venue;
+      
+      const cleanVenue = venue.replace('📍', '').trim();
+      modalVenue.textContent = cleanVenue;
+      modalVenueLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cleanVenue + ' Soverato')}`;
+
       modalDesc.textContent = desc;
 
       // Gestione tags
